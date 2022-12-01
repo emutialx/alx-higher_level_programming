@@ -10,37 +10,16 @@ if __name__ == "__main__":
         exit(1)
     if sys.argv[2] == "+":
         sum = add(int(sys.argv[1]), int(sys.argv[3]))
-        print(
-            "{} {} {} = {}".format(
-                sys.argv[1],
-                sys.argv[2],
-                sys.argv[3],
-                sum))
+        print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], sum))
     elif sys.argv[2] == "-":
         sub_ = sub(int(sys.argv[1]), int(sys.argv[3]))
-        print(
-            "{} {} {} = {}".format(
-                sys.argv[1],
-                sys.argv[2],
-                sys.argv[3],
-                sub_))
+        print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], sub_))
     elif sys.argv[2] == "*":
         mul_ = mul(int(sys.argv[1]), int(sys.argv[3]))
-        print(
-            "{} {} {} = {}".format(
-                sys.argv[1],
-                sys.argv[2],
-                sys.argv[3],
-                mul_))
+        print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], mul_))
     elif sys.argv[2] == "/":
         div_ = div(int(sys.argv[1]), int(sys.argv[3]))
-        print(
-            "{} {} {} = {}".format(
-                sys.argv[1],
-                sys.argv[2],
-                sys.argv[3],
-                div_))
+        print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], div_))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
-
