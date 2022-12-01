@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 import sys
-n = len(sys.argv) - 1
-if n != 0:
-    print("{} {}:".format(n, "arguments"))
-    for i in range(1, n+1):
-        print("{}: {}".format(i, sys.argv[i]))
-elif n == 0:
-    print("{} {}".format(0,"arguments"))
+if __name__ == "__main__":
+    n = len(sys.argv)
+    if n == 1:
+        print("{:d} {}.".format(0, "arguments"))
+    elif n == 2:
+        print("{:d} {}:".format(1, "argument"))
+        for i in range(1, n):
+            print("{:d}: {}".format(n - 1, sys.argv[i]))
+    else:
+        print("{:d} {}:".format(n - 1, "arguments"))
+        for i in range(1, n):
+            print("{:d}: {}".format(i, sys.argv[i]))
