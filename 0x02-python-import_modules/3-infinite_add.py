@@ -2,7 +2,6 @@
 import sys
 if __name__ == __"main"__:
     sum = 0
-    n = len(sys.argv)
-    for i in range(1, n):
+    for i in range(1, len(sys.argv)):
         sum += int(sys.argv[i])
-    print(sum)
+    print("{}".format(sum))
