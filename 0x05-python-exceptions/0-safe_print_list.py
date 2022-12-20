@@ -3,9 +3,9 @@ def safe_print_list(my_list=[], x=0):
     count = 0
     for y in range(x):
         try:
-            print(f"my_list[i]", end="")
+            print(f"{my_list[y]}", end="")
             count += 1
-        except Exception as e:
+        except IndexError:
             break
     print()
     return(count)
