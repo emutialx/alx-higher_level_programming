@@ -2,4 +2,4 @@
 
 def copy_list(l):
 
-    return copy(l)
+    return l.copy()
