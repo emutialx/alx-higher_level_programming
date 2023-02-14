@@ -1,2 +1,2 @@
 --lists database record on mysql server
-SHOW DATABASES
+SHOW DATABASES;
