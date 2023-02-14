@@ -1,2 +1,2 @@
--- create a database if missing
+-- A script that create a database hbtn_0c_0 if missing
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
