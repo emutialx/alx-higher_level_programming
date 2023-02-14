@@ -1,2 +1,2 @@
---lists all tables from a database in my sql server
+-- lists all tables from a database in my sql server
 SHOW TABLES;
