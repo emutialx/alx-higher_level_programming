@@ -1,0 +1,2 @@
+-- script that lists all cities contained in the database 
+SELECT cities.id, cities.name, state.name FROM cities, states WHERE cities.state_id  = states.id order by cities.id; 
